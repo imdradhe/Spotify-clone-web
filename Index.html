@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify – Web Player</title>
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="Utility.css" />
+</head>
+
+<body>
+  <!-- Main Flex Container -->
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="left">
+      <div class="home bg-black rounded m-1 p-1">
+        <div class="logo"><img class="invert" src="Images/Logo.png" alt="Logo" /></div>
+        <ul>
+          <li><img class="invert" src="Images/Home.png" alt="Home" />Home</li>
+          <li><img class="invert" src="Images/search.png" alt="Search" />Search</li>
+        </ul>
+      </div>
+
+      <div class="library bg-black rounded m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="Images/library.png" alt="" />
+          <h2>Your Library</h2>
+        </div>
+        <div class="songList">
+          <ul>
+            <!-- Songs will be dynamically injected -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="right bg-grey rounded m-1 p-1">
+      <div class="header">
+        <div class="navbar">
+            <div class="left-nav">
+              <button class="right-con">Premium</button>
+              <button class="right-con">Support</button>
+              <button class="right-con">Download</button>
+            </div>
+          
+            <div class="verticalvar">|</div>
+          
+            <span class="install">Install App</span>
+          
+            <div class="right-nav">
+              <button class="sign-up">Sign up</button>
+              <button class="log-in">Log in</button>
+            </div>
+          </div>
+
+      <div class="content">
+        <div class="spotifyPlaylists">
+          <h1>Popular Artists</h1>
+          <div class="cardContainer">
+            <div data-folder="arijit" class="card">
+              <img src="Images/arijit.jpg" alt="" />
+              <h2>Arijit Singh</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="Honey" class="card">
+              <img src="Images/honey.jpg" alt="" />
+              <h2>Honey Singh</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="jubin" class="card">
+              <img src="Images/jubin.png" alt="" />
+              <h2>Jubin Nautiyal</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="darshan" class="card">
+              <img src="Images/darshan.jpg" alt="" />
+              <h2>Darshan Rawal</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="shreya" class="card">
+              <img src="Images/shreya.jpg" alt="" />
+              <h2>Shreya Ghosal</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="praak" class="card">
+              <img src="Images/praak.webp" alt="" />
+              <h2>B Praak</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="siddu" class="card">
+              <img src="Images/siddu.jpg" alt="" />
+              <h2>Siddu Moose Wala</h2>
+              <p>Artist</p>
+            </div>
+            <div data-folder="lata" class="card">
+              <img src="Images/lata.jpg" alt="" />
+              <h2>Lata Mangeshkar</h2>
+              <p>Artist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playbar -->
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle"></div>
+        </div>
+        <div class="abovebar">
+          <div class="songinfo"></div>
+          <div class="songbuttons">
+            <img id="previous" src="Images/previous.png" alt="" />
+            <img id="play" src="Images/play.png" alt="" />
+            <img id="next" src="Images/next.png" alt="" />
+          </div>
+          <div class="timevol">
+            <div class="songtime">00:00 / 00:00</div>
+            <div class="volume">
+              <img src="Images/volume.png" alt="" />
+              <input type="range" name="volume" id="volumeRange" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="spotify.js"></script>
+</body>
+
+</html>
